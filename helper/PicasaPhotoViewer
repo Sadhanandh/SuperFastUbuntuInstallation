@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Setting wine dir to the /home/<user>/.PicasaPhotoViewer
+export WINEPREFIX=~/.PicasaPhotoViewer
+
+# Getting arguments
+
+if [ -f $1]; then
+    arg=$HOME/usr/google/PicasaPhotoViewer/splash.png
+else
+    arg=$1
+fi 
+
+# Converting passed image uri to the wine uri
+prefix=Z:
+winepath=${arg//\//\\}
+imgURI=$prefix$winepath
+
+# Getting wine executable path
+PicasaPhotoViewer="$HOME/usr/google/PicasaPhotoViewer/PicasaPhotoViewer.exe"
+
+# Running
+wine $PicasaPhotoViewer "$imgURI"

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/xadmin/usr/dropbox-dist/dropbox
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_IN]=Dropbox 
+Name=Dropbox 
+Comment[en_IN]=Dropbox
+Comment=Dropbox
